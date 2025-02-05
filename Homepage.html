@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airplane Seat Reservation</title>
     <link rel="stylesheet" href="Homepage.css">
 </head>
+
 <body>
     <header>
-        <img class="logo" src={logo.png} alt="logo" height="30" width="40">
+        <img class="logo" src="logo.png.png" alt="logo" height="30px" width="40px" />
         <h1>Aviation Seat Reservation</h1>
     </header>
     <main>
@@ -16,24 +18,153 @@
             <h2>Find Your Flight</h2>
             <form>
                 <label for="from">From:</label>
-                <input type="text" id="from" name="from" placeholder="Enter departure city" required>
-                
+                <input type="text" id="from" name="from" placeholder="Enter departure City" required>
+
                 <label for="to">To:</label>
-                <input type="text" id="to" name="to" placeholder="Enter destination city" required>
-                
+                <input type="text" id="to" name="to" placeholder="Enter destination City" required>
+
                 <label for="date">Date:</label>
                 <input type="date" id="date" name="date" required>
-                
+
                 <button type="submit">Search Flights</button>
             </form>
-        </section> 
+        </section>
 
-        <section class="seats-preview">
-            <h2>Seat Selection</h2>
-            <div class="seat-map">
-                <p>Select a flight to see available seats.</p>
+        <section class="flight-preview-sec">
+            <h2>Flights</h2>
+            <div class="flight-preview-div">
+                <h3 id="flight-name">Flight ABC</h3>
+                <button id="book">Book Now</button>
+                <p id="price">Price:</p>
+                <p id="duration">Duration:</p>
+                <p id="dep-time">Departure:</p>
+                <p id="arr-time">Arrival: </p>
+                <P id="jor-time">Journey:</P>
+                <div class="svgs">
+                    <svg>
+                        <rect width="80" height="30" x="0.1" y="1" rx="15" ry="15" fill="white" />
+                    </svg>
+                    <svg>
+                        <rect width="80" height="30" x="2" y="5" rx="15" ry="15" fill="white" />
+                    </svg>
+                </div>
             </div>
+
+            <div class="flight-preview-div">
+                <h3 id="flight-name">Flight XYZ</h3>
+                <button id="book">Book Now</button>
+                <p id="price">Price:</p>
+                <p id="duration">Duration:</p>
+                <p id="dep-time">Departure:</p>
+                <p id="arr-time">Arrival: </p>
+                <P id="jor-time">Journey:</P>
+              
+                <div class="svgs">
+                    <svg>
+                        <rect width="80" height="30" x="2" y="5" rx="15" ry="15" fill="white" />
+                    </svg>
+                    <svg>
+                        <rect width="80" height="30" x="2" y="5" rx="15" ry="15" fill="white" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="flight-preview-div">
+                <h3 id="flight-name">Flight PQR</h3>
+                <button id="book">Book Now</button>
+                <p id="price">Price:</p>
+                <p id="duration">Duration:</p>
+                <p id="dep-time">Departure:</p>
+                <p id="arr-time">Arrival: </p>
+                <P id="jor-time">Journey:</P>
+                <div class="svgs">
+                    <svg>
+                        <rect width="80" height="30" x="2" y="5" rx="15" ry="15" fill="white" />
+                    </svg>
+                  
+                    <svg>
+                        <rect width="80" height="30" x="2" y="5" rx="15" ry="15" fill="white" />
+                    </svg>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="flight-preview-sec">
+            <h2>Flight ABC</h2>
+            <section>
+                <div class="seat-preview">
+                    <h3>SIDE A</h3>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+
+                </div>
+                <div class="seat-preview">
+                    <h3>SIDE B</h3>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+                    <svg>
+                        <circle cx="25" cy="40" r="20" stroke-width="1" fill="red"/>
+                    </svg>
+
+                </div>
+                
+
+
+
+            </section>
+            <section>
+
+            </section>
         </section>
     </main>
 </body>
+
 </html>
