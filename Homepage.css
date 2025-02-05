@@ -6,7 +6,7 @@ body {
   text-align: center;
 }
 header {
-  background-color: #0073e6;
+  background-color: #0655a3;
   color: white;
   padding: 20px;
   display: flex;
@@ -189,16 +189,14 @@ input,
     height:3pc;
     width:10pc;
     padding-bottom:2px;
-
-
 }
 
 .footer{
     color:white;
     height:20pc;
     width:100%;
-    background-color: black;
-    padding-top:2pc;
+    background-color: rgb(55, 112, 216);
+    padding-top:1pc;
     text-align: center;
 }
 
