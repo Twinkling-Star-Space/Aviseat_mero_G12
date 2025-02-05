@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplane Seat Reservation</title>
+    <link rel="stylesheet" href="Homepage.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src={logo.png} alt="logo" height="30" width="40">
+        <h1>Aviation Seat Reservation</h1>
+    </header>
+    <main>
+        <section class="search">
+            <h2>Find Your Flight</h2>
+            <form>
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" placeholder="Enter departure city" required>
+                
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" placeholder="Enter destination city" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <button type="submit">Search Flights</button>
+            </form>
+        </section> 
+
+        <section class="seats-preview">
+            <h2>Seat Selection</h2>
+            <div class="seat-map">
+                <p>Select a flight to see available seats.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
