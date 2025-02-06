@@ -205,5 +205,16 @@ input,
     margin-left:18pc;
 }
 
+#open-form{
+  margin-left:35pc;
+  background-color:rgb(33, 33, 152);
+  color:white;
+  border-radius:4px;
+  padding:10px;
+  cursor:pointer;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+  
+}
 
 

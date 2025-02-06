@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="header">
+            <header>Ticketing Form</header>
+        </div>
+        <div class="body">
+            <label for="name" id="nametitle">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label id="add">Add Passenger's name</label>
+
+            <label for="age" id="agetitle">Age:</label>
+            <input type="number" id="age" name="age" min="18" required>
+            <label id="add">Add passenger's age</label>
+
+            <label for="citizen" id="citizen" name="citizen" required>Citizenship</label>
+            <select name="citizen" id="citizen">
+                <option value="Nepali">Nepali</option>
+                <option value="Indian">Indian</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="email" id="emailtitle">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone" id="phonetitle">Phone:</label>
+            <input type="number" id="phone" name="phone" required>
+
+            <div id="journey">
+            <label for="departure" id="departuret">Departure:</label>
+            <select name="departure" id="departure">
+                <option value="Janakpur">Janakpur</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Biratnagar">Biratnagar</option>
+                <option value="Pokhara">Pokhara</option>
+            </select>
+            
+            <label for="arrival" id="arrivalt">Arrival:</label>
+            <select name="arrival" id="arrival">
+                <option value="Janakpur">Janakpur</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Biratnagar">Biratnagar</option>
+                <option value="Pokhara">Pokhara</option>
+            </select>
+        </div>
+            <label for="seats" id="seatstitle">Number of Seats:</label>
+            <input type="number" id="seats" min="1" required>
+           
+            <div class="classk">
+            <label for="class" id="classtitle">Class:</label>
+            <select name="class" id="class">
+                <option value="Economy">Economy</option>
+                <option value="Business">Business</option>
+                <option value="First Class">First Class</option>
+            </select>
+
+
+            <label for="card" id="cardtitle">Payment Method:</label>
+            <input type="radio" id="card" name="card" value="Card">
+            <label for="card">Credit/Debit Card</label>
+            <input type="radio" id="cash" name="card" value="Cash">
+            <label for="cash">Cash</label>
+        </div>
+
+        <button class="book"> Add to Credit/Debit Card</button>
+
+
+        </div>
+    </form>
+</body>
+
+</html>

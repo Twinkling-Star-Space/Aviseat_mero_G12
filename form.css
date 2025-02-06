@@ -1,0 +1,152 @@
+.header{
+    width: 28%;
+    padding: 2%;
+    margin: auto;
+    text-align: center;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 5px rgba(47, 44, 44, 0.1);
+    color:white;
+    background-color:rgb(17, 17, 232);
+    height:6pc;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    font-size:30px;
+    margin-top:1pc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:0px;
+    padding-left:14%;
+    box-shadow:  0 0 black;
+}
+
+.body{
+    width: 40%;
+    padding: 2%;
+    margin: auto;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 5px black;
+    height:150%;
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+    display:block;
+    
+}
+
+#add{
+   color:green;
+   margin-left:40%;
+   font-size:14;
+   font-weight:bold;
+}
+
+#nametitle,#agetitle,#emailtitle,#phonetitle,#seatstitle{
+display:flex;
+align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    font-size:14px;
+    color:black;
+    margin-top:1pc;
+
+}
+#departuret{
+  margin-right:2px;
+  margin-left:3.7pc;
+  margin-top:0.5pc;
+}
+
+#arrivalt{
+    margin-right:2px;
+    margin-top:0.5pc;
+}
+
+#citizen{
+    display:block;
+    margin-top:1pc;
+    margin-bottom:1pc;
+    font-size:14px;
+    color:black;
+    margin-left:3.7pc;
+    margin-right:10px;
+    display:block;
+    width:30%;
+}
+
+#journey{
+ display:flex;
+ margin-right:2pc;
+ margin-bottom:1pc;
+ font-size:14px;
+ color:black;
+
+}
+#departure{
+    margin-right:5pc;
+}
+
+#departure, #arrival{
+    width:20%;
+    height:2pc;
+    margin-bottom:1pc;
+    display:flex;
+    font-size:14px;
+
+}
+#name,#age,#email,#phone,#seats{
+    width:30pc;
+    height:2pc;
+    margin-bottom:1pc;
+    display:flex;
+    padding-left:5px;
+    align-items:center;
+    margin:auto;
+
+}
+
+#phone{
+    margin-bottom:1pc;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.classk{
+    display:block;
+    padding-top:1pc;
+    padding-bottom:1pc;
+    padding-left:3.5pc;
+
+}
+
+#class{
+    width:50%;
+    height:2pc;
+    margin-bottom:1pc;
+    display:flex;
+    font-size:14px;
+    color:black;
+
+}
+#classtitle{
+    display:flex;
+}
+
+#seats{
+    margin-bottom:1pc;
+}
+
+.book{
+    background-color: blue;
+    color:white;
+    padding:5px;
+    border-radius:5px;
+    margin-top:1pc;
+    cursor:pointer;
+    margin-left:80%;
+    margin-right:1pc;
+    margin-bottom:4pc;
+    width:5pc;
+}

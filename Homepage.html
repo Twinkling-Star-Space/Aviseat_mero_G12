@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airplane Seat Reservation</title>
     <link rel="stylesheet" href="Homepage.css">
+    <script src="Homepage.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -121,10 +123,12 @@
         </section>
 
         <section class="flight-preview-sec">
+            
             <h2>Flight ABC</h2>
             <p>Choose your comfortable seat</p>
+            <hr>
             <button class="std"> BUSINESS CLASS</button>
-            <section>
+            <section id="passenger-details">
                 
                 <div class="seat-preview">
                     <h3 id="side">SIDE A</h3>
@@ -187,6 +191,7 @@
                    
 
                 </div>
+                <button id="open-form">OPEN FORM</button>
             </section>
     </main>
     <hr>
