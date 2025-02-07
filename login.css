@@ -1,0 +1,90 @@
+.container{
+    margin:0px;
+    color:white;
+    width:99%;
+    height:100%;
+    background-color: rgb(150, 19, 19);
+    padding-bottom:10pc;
+    margin-top:0rem;
+}
+
+img{
+    width:98%;
+    height:87%;
+    object-fit: cover;
+    margin:auto;
+    position:absolute;
+}
+
+
+
+.header{
+    width: 30%;
+    padding: 2%;
+    color:black;
+    background-color: rgb(22, 38, 185);
+    height: 4pc;
+    text-align: center;
+    margin:auto;
+    margin-top:6pc;
+    opacity:0.5;
+    padding-top:2pc;
+    border-radius: 12px 12px 0 0;
+
+}
+
+.body{
+    width: 30%;
+    margin: auto;
+    padding: 2%;
+    background-color: rgb(22, 38, 185);;
+    height: 20pc;
+    box-shadow:0 10px 10px black;
+    opacity:0.5;
+    border-radius: 0 0  12px 12px;
+
+}
+h2{
+    margin-left:2pc;
+    font-weight:bold;
+    color:black;
+}
+
+#ustitle, #pwtitle{
+    display:block;
+    margin-left:2pc;
+    font-weight:bold;
+    color:black;
+    font-size:20px;
+}
+
+#username, #password{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left:2pc;
+    padding-left:15px;
+    opacity:1;
+  
+}
+
+#submit{
+  width: 85%;
+  padding: 10px;
+  background-color: rgb(24, 148, 115);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  align-items:right;
+  margin-left:2pc;
+  margin-top:3pc;
+}
+
+#submit:hover{
+    background-color: rgb(19, 133, 98);
+}

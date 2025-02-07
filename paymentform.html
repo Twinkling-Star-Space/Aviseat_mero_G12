@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment slip</title>
+    <link rel="stylesheet" href="paymet.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1">
+            <img src="image2.png" alt="airplane">
+        <div class="container2">
+            <header class="header">
+                <div class="logodiv">
+                    <img src="logo.png.png" id="logo" alt="logo">
+                </div>
+                <h1>Payment Slip</h1>
+                <div class="amountbooked"> Amount:Rs.</div>
+                <div class="rupee">1000 </div>
+            </header>
+            <main>
+                <section class="body">
+                    <hr>
+                    <h2>Payment Details</h2>
+                    <label for="typecard" id="cardtitle">Choose Your card</label>
+                    <select name="cards" id="cards" title="Choose">
+                        <option value="Credit Card">Credit Card</option>
+                        <option value="Debit Card">Debit Card</option>
+                        <option value="PayPal">PayPal</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+
+                    <label for="payment name" id="paytitle">Card number</label>
+                    <input type="text" id="payment-name" placeholder="Enter your card number" required>
+
+                    <label for="amount" id="amounttitle">Amount</label>
+                    <input type="number" id="amount" placeholder="Enter amount" min="1" required>
+
+                    <label for="date" id="datetitle">Date</label>
+                    <input type="date" id="date" required>
+
+                    <label for="payment name" id="paytitle">Reason</label>
+                    <input type="text" id="payment-name" placeholder="Enter Reason for Payment" required>
+
+
+                    <button type="submit" id="submit">Submit</button>
+                </section>
+            </main>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
