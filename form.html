@@ -11,15 +11,17 @@
 <body>
     <form action="">
         <div class="header">
+            <img id="logo" src="logo.png.png" alt="logo">
             <header>Ticketing Form</header>
+            
         </div>
         <div class="body">
             <label for="name" id="nametitle">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
             <label id="add">Add Passenger's name</label>
 
             <label for="age" id="agetitle">Age:</label>
-            <input type="number" id="age" name="age" min="18" required>
+            <input type="number" id="age" name="age" min="18" placeholder="Enter your Age" required>
             <label id="add">Add passenger's age</label>
 
             <label for="citizen" id="citizen" name="citizen" required>Citizenship</label>
@@ -30,10 +32,10 @@
             </select>
 
             <label for="email" id="emailtitle">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
 
             <label for="phone" id="phonetitle">Phone:</label>
-            <input type="number" id="phone" name="phone" required>
+            <input type="number" id="phone" name="phone" placeholder="Enter your Phone number" required>
 
             <div id="journey">
             <label for="departure" id="departuret">Departure:</label>
@@ -53,7 +55,7 @@
             </select>
         </div>
             <label for="seats" id="seatstitle">Number of Seats:</label>
-            <input type="number" id="seats" min="1" required>
+            <input type="number" id="seats" min="1" placeholder="Enter how many seats do you want" required>
            
             <div class="classk">
             <label for="class" id="classtitle">Class:</label>
@@ -71,7 +73,7 @@
             <label for="cash">Cash</label>
         </div>
 
-        <button class="book"> Add to Credit/Debit Card</button>
+        <button class="book" type="button" onclick="location.href='paymentform.html'"> Add to Credit/Debit Card</button>
 
 
         </div>

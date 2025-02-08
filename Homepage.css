@@ -11,6 +11,14 @@ header {
   padding: 20px;
   display: flex;
 }
+
+header {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+
 h1 {
   font-size: 38px;
   margin-top: 3%;
@@ -61,7 +69,6 @@ h2 {
   font-size: 36px;
   margin-bottom: 0;
   font-weight: bold;
-  position: relative;
   align-items: center;
   display: block;
 }
@@ -70,7 +77,6 @@ h3 {
   font-size: 24px;
   margin-bottom: 0;
   font-weight: bold;
-  position: relative;
   margin-left: 0px;
 }
 
@@ -90,7 +96,6 @@ main {
 
 .seat-preview {
   margin-left: 1pc;
-  position: relative;
   width: 18pc;
   display: inline-block;
   padding-left: 1pc;
@@ -131,6 +136,7 @@ main {
     margin-left:0px;
     margin-right:1pc;
 }
+
 #flight-name {
   display: inline-block;
   margin-top: 0px;
@@ -138,6 +144,8 @@ main {
   text-align: left;
   margin-right: 23pc;
 }
+
+
 form {
   display: flex;
   flex-direction: column;
