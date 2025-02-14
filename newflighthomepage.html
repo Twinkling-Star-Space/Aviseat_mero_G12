@@ -21,7 +21,7 @@
             <div class="profile-btn">
             </div>
         </div>
-        <script src="search.js"></script>
+       
     </header>
 
     <main>
@@ -29,10 +29,10 @@
             <h2>Find Your Flight</h2>
             <form>
                 <label for="from">From:</label>
-                <input type="search" id="from" name="from" placeholder="Enter departure City" required>
+                <input type="search" id=" from" name="from" placeholder="Enter departure City" data-search>
 
                 <label for="to">To:</label>
-                <input type="search" id="to" name="to" placeholder="Enter destination City" required>
+                <input type="search" id="to" name="to" placeholder="Enter destination City" data-search>
 
                 <label for="date">Date:</label>
                 <input type="date" id="date" name="date" required>
@@ -43,83 +43,13 @@
 
         <section class="flight-preview-sec">
                     <h2>Flights</h2>
-                    <div class="flight-preview-div">
-                        <h3 id="flight-name">Flight ABC</h3>
-                        <button id="book">Book Now</button>
-                        <p id="price">Price:</p>
-                        <p id="duration">Duration:</p>
-                        <p id="dep-time">Departure:</p>
-                        <p id="arr-time">Arrival: </p>
-                        <P id="jor-time">Journey:</P>
-                        <div class="show">
-                            <p class="details" id="p">43000</p>
+                    <div class="user-cards" data-user-cards-container> </div>
+                    <template data-user-template>
+                        <div class="card">
+                            <div class="header" data-header></div>
+                            <div class="body" data-body></div>
                         </div>
-                        <div class="show">
-                            <p class="details" id="tt">30 mins</p>
-                        </div>
-                        <div class="show">
-                            <p class="details" > <span id="d" class="departure-location">Kathmandu</span> </p>
-                        </div>
-                        <div class="show">
-                            <p class="details" ><span id="de" class="arrival-location">Janakpur</span> </p>
-                        </div>
-                        <div class="show">
-                            <p class="details" id="t">4 pm</p>
-                        </div>
-                    </div>
-
-                    <div class="flight-preview-div">
-                        <h3 id="flight-name">Flight XYZ</h3>
-                        <button id="book">Book Now</button>
-                        <p id="price">Price:</p>
-                        <p id="duration">Duration:</p>
-                        <p id="dep-time">Departure:</p>
-                        <p id="arr-time">Arrival: </p>
-                        <P id="jor-time">Journey:</P>
-
-                        <div class="show">
-                            <p class="details" id="p">45000</p>
-                        </div>
-                        <div class="show">
-                            <P class="details" id="tt">20 mins</P>
-                        </div>
-                        <div class="show">
-                            <p class="details"> <span  id="d" class="departure-location">Kathmandu</span> </p>
-                        </div>
-                        <div class="show">
-                            <p class="details" ><span id="de" class="arrival-location">Pokhara</span></p>
-                        </div>
-                        <div class="show">
-                            <p class="details" id="t">3 pm</p>
-                        </div>
-                    </div>
-
-                    <!--flight details-->
-                    <div class="flight-preview-div">
-                        <h3 id="flight-name">Flight PQR</h3>
-                        <button id="book">Book Now</button>
-                        <p id="price">Price:</p>
-                        <p id="duration">Duration:</p>
-                        <p id="dep-time">Departure:</p>
-                        <p id="arr-time">Arrival: </p>
-                        <P id="jor-time">Journey:</P>
-                        <div class="show">
-                            <p class="details" id="p">55000</p>
-                        </div>
-                        <div class="show">
-                            <p class="details" id="tt">1 hrs</p>
-                        </div>
-                        <div class="show">
-                            <p class="details"> <span  id="d" class="departure-location">Kathmandu</span> </p>
-                        </div>
-                        <div class="show">
-                            <p class="details" ><span id="de" class="arrival-location">Jhapa</span></p>
-                        </div>
-                        <div class="show">
-                            <p class="details" id="t">2 pm</p>
-                        </div>
-
-                    </div>
+                    </template>
 
         </section>
 
