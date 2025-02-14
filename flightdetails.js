@@ -7,7 +7,7 @@ let users = [];
 searchInput.addEventListener("input", (e) => {
   const value = e.target.value;
   users.forEach(user => {
-    const isVisible = user.airline.toLowerCase().includes(value) || user.departure.toLowerCase().includes(value)
+    const isVisible = user.departure.toLowerCase().includes(value) || user.arrival.toLowerCase().includes(value)
     user.element.classList.toggle("hide", !isVisible)
   })
 });
@@ -19,12 +19,16 @@ fetch("http://localhost:3000/flights")
       const card = userCardTemplate.content.cloneNode(true).children[0]; // Fixed typo
       const header = card.querySelector("[data-header]");
       const body = card.querySelector("[data-body]");
+      const part1 = card.querySelector("[data-arrival]");
+      const part2 = card.querySelector("[data-duration]");
 
       header.textContent = user.airline;
       body.textContent = user.departure;
+      part1.textContent = user.arrival;
+      part2.textContent = user.duration;
 
       userCardContainer.append(card);
-      return { airline: user.airline, departure: user.departure, element:card}
+      return { airline: user.airline, arrival: user.arrival, departure:user.departure, element:card}
     });
   })
   .catch(error => console.error("Error fetching data:", error)); // Added error handling

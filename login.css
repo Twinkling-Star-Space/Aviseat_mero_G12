@@ -16,13 +16,11 @@ img{
     position:absolute;
 }
 
-
-
 .header{
     width: 30%;
     padding: 2%;
     color:black;
-    background-color: rgb(22, 38, 185);
+    background-color: rgb(13, 100, 186);
     height: 4pc;
     text-align: center;
     margin:auto;
@@ -30,6 +28,7 @@ img{
     opacity:0.5;
     padding-top:2pc;
     border-radius: 12px 12px 0 0;
+    color:white;
 
 }
 
@@ -37,7 +36,7 @@ img{
     width: 30%;
     margin: auto;
     padding: 2%;
-    background-color: rgb(22, 38, 185);;
+    background-color: rgb(13, 100, 186);
     height: 20pc;
     box-shadow:0 10px 10px black;
     opacity:0.5;
@@ -47,14 +46,14 @@ img{
 h2{
     margin-left:2pc;
     font-weight:bold;
-    color:black;
+    color:white;
 }
 
 #ustitle, #pwtitle{
     display:block;
     margin-left:2pc;
     font-weight:bold;
-    color:black;
+    color:white;
     font-size:20px;
 }
 
@@ -74,7 +73,7 @@ h2{
 #submit{
   width: 85%;
   padding: 10px;
-  background-color: rgb(24, 148, 115);
+  background-color: rgb(39, 185, 88);
   color: white;
   border: none;
   border-radius: 5px;
@@ -86,5 +85,5 @@ h2{
 }
 
 #submit:hover{
-    background-color: rgb(19, 133, 98);
+    background-color: rgb(15, 197, 142);
 }
