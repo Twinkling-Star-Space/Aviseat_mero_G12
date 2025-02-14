@@ -7,12 +7,12 @@ let users = [];
 searchInput.addEventListener("input", (e) => {
   const value = e.target.value;
   users.forEach(user => {
-    const isVisible = user.name.toLowerCase().includes(value) || user.email.toLowerCase().includes(value)
+    const isVisible = user.airline.toLowerCase().includes(value) || user.departure.toLowerCase().includes(value)
     user.element.classList.toggle("hide", !isVisible)
   })
 });
 
-fetch("https://jsonplaceholder.typicode.com/users")
+fetch("http://localhost:3000/flights")
   .then(res => res.json())
   .then(data => {
     users = data.map(user => {
@@ -20,11 +20,11 @@ fetch("https://jsonplaceholder.typicode.com/users")
       const header = card.querySelector("[data-header]");
       const body = card.querySelector("[data-body]");
 
-      header.textContent = user.name;
-      body.textContent = user.email;
+      header.textContent = user.airline;
+      body.textContent = user.departure;
 
       userCardContainer.append(card);
-      return { name: user.name, email: user.email, element:card}
+      return { airline: user.airline, departure: user.departure, element:card}
     });
   })
   .catch(error => console.error("Error fetching data:", error)); // Added error handling

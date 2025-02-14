@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airplane Seat Reservation</title>
     <link rel="stylesheet" href="Homepage.css">
-    <script src="Homepage.js" defer></script>
+   <!--<script src="Homepage.js" defer></script>--> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="flightdetails.js" defer></script>
+
 </head>
 
 <body>
@@ -43,9 +45,11 @@
 
         <section class="flight-preview-sec">
                     <h2>Flights</h2>
+                    <hr>
                     <div class="user-cards" data-user-cards-container> </div>
                     <template data-user-template>
                         <div class="card">
+                            <div class="flight"><img src="image2.png" alt="plane" data-image></div>
                             <div class="header" data-header></div>
                             <div class="body" data-body></div>
                         </div>
@@ -58,7 +62,7 @@
             <h2>Flight ABC</h2>
             <p>Choose your comfortable seat</p>
             <hr>
-            <button class="std"> BUSINESS CLASS</button>
+            <h2> BUSINESS CLASS</h2>
             <section id="passenger-details">
 
                 <div class="seat-preview">
@@ -91,7 +95,7 @@
 
                 </div>
             </section>
-            <button class="std">ECONOMIC CLASS</button>
+            <h2>ECONOMIC CLASS</h2>
             <section>
                 <div class="seat-preview">
                     <h3 id="side">SIDE A</h3>
