@@ -1,7 +1,5 @@
 
 
-
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -16,9 +14,8 @@ header {
 }
 
 header {
-  position: sticky;
+  position:sticky;
   top: 0;
-  overflow: hidden;
 }
 
 
@@ -72,6 +69,7 @@ input{
   height:20pc;
   border-radius:9px;
   box-shadow: 0 0 10px grey;
+  cursor:pointer;
 
 }
 
@@ -106,6 +104,16 @@ input{
   border-radius:7px;
   
   
+}
+#airname{
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+}
+
+#header{
+  font-size:30px;
+  font-weight:bold;
 }
 
 img{

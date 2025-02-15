@@ -11,7 +11,7 @@
    <!--<script src="flightdetails.js" defer></script>-->
   
    <script src="flight03.js" defer></script>
-
+    <script src="cardtoseat.js" defer></script>
 </head>
 
 <body>
@@ -50,8 +50,8 @@
                     <hr>
                     <div class="user-cards" data-user-cards-container> </div>
                     <template data-user-template>
-                        <div class="card">
-                            <div class="flight"><img src="image2.png" alt="plane" data-image>
+                        <div class="card"  id="scroll-button">
+                            <div class="flight"  data-target="flight-details" ><img src="image2.png" data-target="flight-details" alt="plane" data-image>
                             </div>
                             <div class="header" data-header></div>
                             <p class="data">Departure:</p><div class="body" data-body></div>
@@ -59,12 +59,12 @@
                             <p class="data">Duration:</p><div class="part2" data-duration></div>
                         </div>
                     </template>
-
         </section>
 
-        <section class="flight-preview-sec">
 
-            <h2>Flight ABC</h2>
+
+        <section class="flight-preview-sec" id="flight-details">
+            <h1 id="airname"><div id="header" data-header>loading.....</div></h1>
             <p>Choose your comfortable seat</p>
             <hr>
             <h2> BUSINESS CLASS</h2>
@@ -72,7 +72,7 @@
 
                 <div class="seat-preview">
                     <h3 id="side">SIDE A</h3>
-                    <button id="s1" name="s1">1</button>
+                    <button id="s1" name="s1" action="insertdata/inseat.php" method="post">1</button>
                     <button id="s1" name="s1">2</button>
                     <button id="s1" name="s1">3</button>
                     <button id="s1" name="s1">4</button>
