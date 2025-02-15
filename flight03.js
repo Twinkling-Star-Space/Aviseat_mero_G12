@@ -1,25 +1,16 @@
 const userCardTemplate = document.querySelector("[data-user-template]");
 const userCardContainer = document.querySelector("[data-user-cards-container]");
 const searchInput = document.querySelector("[data-search]");
-const searchButton = document.getElementById("search-btn");
 
 let users = [];
 
- const Search = () => {
-  const value = searchInput.target.value;
+searchInput.addEventListener("input", (e) => {
+  const value = e.target.value;
   users.forEach(user => {
     const isVisible = user.departure.toLowerCase().includes(value) || user.arrival.toLowerCase().includes(value)
     user.element.classList.toggle("hide", !isVisible)
-  });
-};
-
-searchButton.addEventListener("click", (e) => {
-  e.preventDefault(); // Prevent page reload
-  Search(); // Perform search
+  })
 });
-
-
-//  userCardContainer.innerHTML = "";
 
 fetch("http://localhost:3000/flights")
   .then(res => res.json())

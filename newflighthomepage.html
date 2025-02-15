@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="Homepage.css">
    <!--<script src="Homepage.js" defer></script>--> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="flightdetails.js" defer></script>
+   <!--<script src="flightdetails.js" defer></script>-->
+  
+   <script src="flight03.js" defer></script>
 
 </head>
 
@@ -37,9 +39,9 @@
                 <input type="search" id="to" name="to" placeholder="Enter destination City" data-search>
 
                 <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
+                <input type="date" id="date" name="date">
 
-                <button type="submit" id="search-btn" onclick="searchData()">Search Flights</button>
+                <button type="submit" id="search-btn">Search Flights</button>
             </form>
         </section> 
 
@@ -49,11 +51,12 @@
                     <div class="user-cards" data-user-cards-container> </div>
                     <template data-user-template>
                         <div class="card">
-                            <div class="flight"><img src="image2.png" alt="plane" data-image></div>
+                            <div class="flight"><img src="image2.png" alt="plane" data-image>
+                            </div>
                             <div class="header" data-header></div>
-                            <div class="body" data-body></div>
-                            <div class="part1" data-arrival></div>
-                            <div class="part2" data-duration></div>
+                            <p class="data">Departure:</p><div class="body" data-body></div>
+                            <p class="data">Arrival:</p><div class="part1" data-arrival></div>
+                            <p class="data">Duration:</p><div class="part2" data-duration></div>
                         </div>
                     </template>
 
