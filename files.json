@@ -1,0 +1,105 @@
+{
+    "flights": [
+      {
+        "flight_number": "AA-247",
+        "airline": "American Airlines",
+        "departure": "New York (JFK)",
+        "arrival": "Los Angeles (LAX)",
+        "departure_time": "8:15 AM",
+        "arrival_time": "11:45 AM",
+        "duration": "6 hours 30 minutes",
+        "aircraft": "Boeing 737-800"
+      },
+      {
+        "flight_number": "EK-409",
+        "airline": "Emirates",
+        "departure": "Dubai (DXB)",
+        "arrival": "London Heathrow (LHR)",
+        "departure_time": "2:00 PM",
+        "arrival_time": "6:30 PM",
+        "duration": "7 hours 30 minutes",
+        "aircraft": "Airbus A380"
+      },
+      {
+        "flight_number": "SQ-321",
+        "airline": "Singapore Airlines",
+        "departure": "Singapore (SIN)",
+        "arrival": "Sydney (SYD)",
+        "departure_time": "10:30 PM",
+        "arrival_time": "7:00 AM (next day)",
+        "duration": "8 hours 30 minutes",
+        "aircraft": "Airbus A350"
+      },
+      {
+        "flight_number": "BA-178",
+        "airline": "British Airways",
+        "departure": "London Gatwick (LGW)",
+        "arrival": "Paris (CDG)",
+        "departure_time": "9:45 AM",
+        "arrival_time": "11:15 AM",
+        "duration": "1 hour 30 minutes",
+        "aircraft": "Airbus A320"
+      },
+      {
+        "flight_number": "DL-982",
+        "airline": "Delta Airlines",
+        "departure": "Atlanta (ATL)",
+        "arrival": "Tokyo Narita (NRT)",
+        "departure_time": "12:00 PM",
+        "arrival_time": "3:30 PM (next day)",
+        "duration": "14 hours 30 minutes",
+        "aircraft": "Boeing 777-200LR"
+      },
+      {
+        "flight_number": "QF-12",
+        "airline": "Qantas",
+        "departure": "Melbourne (MEL)",
+        "arrival": "San Francisco (SFO)",
+        "departure_time": "11:00 AM",
+        "arrival_time": "6:30 AM (same day)",
+        "duration": "15 hours 30 minutes",
+        "aircraft": "Boeing 787-9"
+      },
+      {
+        "flight_number": "LH-117",
+        "airline": "Lufthansa",
+        "departure": "Frankfurt (FRA)",
+        "arrival": "Mumbai (BOM)",
+        "departure_time": "10:00 PM",
+        "arrival_time": "10:00 AM (next day)",
+        "duration": "8 hours",
+        "aircraft": "Airbus A330"
+      },
+      {
+        "flight_number": "AC-845",
+        "airline": "Air Canada",
+        "departure": "Toronto (YYZ)",
+        "arrival": "Vancouver (YVR)",
+        "departure_time": "7:00 AM",
+        "arrival_time": "9:30 AM",
+        "duration": "4 hours 30 minutes",
+        "aircraft": "Boeing 737 MAX 8"
+      },
+      {
+        "flight_number": "TK-72",
+        "airline": "Turkish Airlines",
+        "departure": "Istanbul (IST)",
+        "arrival": "New York (JFK)",
+        "departure_time": "3:00 PM",
+        "arrival_time": "7:00 PM",
+        "duration": "11 hours",
+        "aircraft": "Boeing 777-300ER"
+      },
+      {
+        "flight_number": "JL-511",
+        "airline": "Japan Airlines",
+        "departure": "Tokyo Haneda (HND)",
+        "arrival": "Seoul Incheon (ICN)",
+        "departure_time": "1:00 PM",
+        "arrival_time": "3:30 PM",
+        "duration": "2 hours 30 minutes",
+        "aircraft": "Boeing 767"
+      }
+    ]
+  }
+  

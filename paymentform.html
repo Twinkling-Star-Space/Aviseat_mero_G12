@@ -22,6 +22,7 @@
                 <div class="rupee">1000 </div>
             </header>
             <main>
+                <form action="C:\XAMPP\htdocs\AVISEAT\Aviseat_mero_G12\AVISEAT_PHP\insertdata\inpayment.php" method="post">
                 <section class="body">
                     <hr>
                     <h2>Payment Details</h2>
@@ -35,20 +36,21 @@
 
 
                     <label for="payment name" id="paytitle">Card number</label>
-                    <input type="text" id="payment-name" placeholder="Enter your card number" required>
+                    <input type="text" id="payment-name" name="Card_number" placeholder="Enter your card number" required>
 
                     <label for="amount" id="amounttitle">Amount</label>
-                    <input type="number" id="amount" placeholder="Enter amount" min="1" required>
+                    <input type="number" id="amount" name="Amount" placeholder="Enter amount" min="1" required>
 
                     <label for="date" id="datetitle">Date</label>
-                    <input type="date" id="date" required>
+                    <input type="date" id="date" name="payment_date" required>
 
                     <label for="payment name" id="paytitle">Reason</label>
-                    <input type="text" id="payment-name" placeholder="Enter Reason for Payment" required>
+                    <input type="text" id="payment-name" name="payment_reason" placeholder="Enter Reason for Payment" required>
 
 
                     <button type="submit" id="submit">Submit</button>
                 </section>
+            </form>
             </main>
         </div>
         </div>
