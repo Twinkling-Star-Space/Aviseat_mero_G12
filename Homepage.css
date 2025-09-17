@@ -1,5 +1,3 @@
-
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,14 +5,17 @@ body {
   background-color: #f4f4f4;
   text-align: center;
 }
+
 header {
   background-color: #0655a3;
   color: white;
   display: flex;
+  justify-content:left;
+  align-items: center;
 }
 
 header {
-  position:sticky;
+  position: sticky;
   top: 0;
 }
 
@@ -26,12 +27,12 @@ h1 {
   position: relative;
   align-items: center;
   display: block;
-  margin-right:18pc;
+  margin-right: 18pc;
 }
 
 .logo {
-  height: 10%;
-  width: 10%;
+  height: 6%;
+  width: 6%;
   margin-right: 20px;
   position: relative;
   object-fit: cover;
@@ -39,94 +40,99 @@ h1 {
   margin-left: 10%;
 }
 
-
-
-
-
-.flight-preview-sec{
-  display:flex;
+.flight-preview-sec {
+  display: flex;
   flex-direction: column;
-  gap:.25rem;
+  gap: .25rem;
 }
 
 input{
-  font-size:1rem;
+  font-size: 1rem;
 }
 
-.user-cards{
-  display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-  gap:.25rem;
-  margin-top:1rem;
-  margin:auto;
-  margin-left:2pc;
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: .25rem;
+  margin-top: 1rem;
+  margin: auto;
+  margin-left: 2pc;
 }
 
 .card{
   background-color: rgba(206, 202, 206, 0.284);
-  margin-right:2pc;
-  margin-bottom:2pc;
-  height:20pc;
-  border-radius:9px;
+  margin-right: 2pc;
+  margin-bottom: 2pc;
+  height: 20pc;
+  border-radius: 9px;
   box-shadow: 0 0 10px grey;
-  cursor:pointer;
+  cursor: pointer;
 
 }
 
-.body,.part1,.part2{
-  display:inline-block;
+.card:hover {
+  background-color: aquamarine; /* enlarge 5% on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* make shadow deeper */
+}
+
+
+.body,
+.part1,
+.part2 {
+  display: inline-block;
   grid-template-columns: repeat(autofill, minmax(5px, 10px));
 }
 
-.card >.header{
-  font-size:1.5rem;
-  font-weight:bold;
+.card>.header {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.card>.body,.part1,.part2{
-  font-size:.7rem;
-  margin-right:8px;
-  margin-bottom:1px;
+.card>.body,
+.part1,
+.part2 {
+  font-size: .7rem;
+  margin-right: 8px;
+  margin-bottom: 1px;
 
 }
 
-.hide{
-  display:none;
+.hide {
+  display: none;
 }
 
-.flight{
-  width:100%;
-  height:60%;
-  margin-bottom:1pc;
-  display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+.flight {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 1pc;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   background-color: rgb(43, 41, 41);
-  border-radius:7px;
-  
-  
+  border-radius: 7px;
 }
-#airname{
+
+#airname {
   align-items: center;
   justify-content: center;
-  margin:auto;
+  margin: auto;
 }
 
-#header{
-  font-size:30px;
-  font-weight:bold;
+#header {
+  font-size: 30px;
+  font-weight: bold;
 }
 
-img{
-  width:100%;
-  height:100%;
+img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius:7px;
+  border-radius: 7px;
 }
 
-.data{
-  display:inline-block;
-  font-size:0.8rem;
-  font-weight:bold;
+.data {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 
@@ -137,45 +143,45 @@ img{
 
 
 
-.details{
-  font-size:15px;
-  margin-top:7%;
+.details {
+  font-size: 15px;
+  margin-top: 7%;
 }
 
-.header-btns{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+.header-btns {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-left:25pc;
 }
 
-.header-btn{
-    background-color:white;
-    color:black;
-    height:40px;
-    width:100px;
-    border-radius:10px;
-    margin-top:12%;
-    margin-left:6px;
-    cursor:pointer;
-    border:none;
+.header-btn {
+  background-color: white;
+  color: black;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  margin-left: 6px;
+  cursor: pointer;
+  border: none;
 }
 
-.profile-btn{
-    background-color:white;
-    color:black;
-    height: 60px;
-    width:60px;
-    border-radius:100px;
-    margin-top:9%;
-    margin-left:6px;
+.profile-btn {
+  background-color: white;
+  color: black;
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  margin-left: 6px;
 }
+
 h2 {
   font-size: 36px;
   margin-bottom: 0;
   font-weight: bold;
   align-items: center;
   display: block;
-  margin-top:1px;
+  margin-top: 1px;
 }
 
 h3 {
@@ -198,7 +204,7 @@ main {
   width: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  
+
 }
 
 .seat-preview {
@@ -230,17 +236,17 @@ main {
   display: inline-block;
 }
 
-.show{
-    background-color:rgb(247, 236, 236);
-    color:black;
-    height: 30px;
-    width:110px;
-    border-radius:100px;
-    border-color:black;
-    border-width:2px;
-    display:inline-block;
-    margin-left:0px;
-    margin-right:1pc;
+.show {
+  background-color: rgb(247, 236, 236);
+  color: black;
+  height: 30px;
+  width: 110px;
+  border-radius: 100px;
+  border-color: black;
+  border-width: 2px;
+  display: inline-block;
+  margin-left: 0px;
+  margin-right: 1pc;
 }
 
 #flight-name {
@@ -257,6 +263,7 @@ form {
   flex-direction: column;
   gap: 10px;
 }
+
 input,
 #book,
 #search-btn {
@@ -264,12 +271,14 @@ input,
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 #book,
 #search-btn {
   background-color: #0073e6;
   color: white;
   cursor: pointer;
 }
+
 #book,
 #search-btn:hover {
   background-color: #005bb5;
@@ -280,61 +289,60 @@ input,
   height: 100px;
   border-radius: 20px;
   margin-left: 2px;
-  margin-bottom:6px;
-  font-size:24px;
+  margin-bottom: 6px;
+  font-size: 24px;
   transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
 }
 
-#s1:hover{
-    background-color: rgb(23, 138, 23);
-    color:white;
-    opacity:2;
-    cursor:pointer;
-    border-color:white;
-    transform: scale(1.1);
+#s1:hover {
+  background-color: rgb(23, 138, 23);
+  color: white;
+  opacity: 2;
+  cursor: pointer;
+  border-color: white;
+  transform: scale(1.1);
 }
 
-#side{
-    margin-bottom:15px;
+#side {
+  margin-bottom: 15px;
 
 }
 
-.std{
-    border-color: white;
-    background-color: white;
-    height:3pc;
-    width:10pc;
-    padding-bottom:2px;
+.std {
+  border-color: white;
+  background-color: white;
+  height: 3pc;
+  width: 10pc;
+  padding-bottom: 2px;
 }
 
-.footer{
-    color:white;
-    height:20pc;
-    width:100%;
-    background-color: rgb(55, 112, 216);
-    padding-top:1pc;
-    text-align: center;
+.footer {
+  color: white;
+  height: 16pc;
+  width: 100%;
+  background-color: rgb(55, 112, 216);
+  text-align: center;
+  padding-top:1px;
+  padding-bottom:1px;
 }
 
-#clg{
-    align-items: center;
-    margin-left:18pc;
+#clg {
+  align-items: center;
+  margin-left: 18pc;
 }
 
-#open-form{
-  margin-left:35pc;
-  background-color:rgb(33, 33, 152);
-  color:white;
-  border-radius:4px;
-  padding:10px;
-  cursor:pointer;
+#open-form {
+  margin-left: 35pc;
+  background-color: rgb(33, 33, 152);
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   border: none;
-  
+
 }
 
-hr{
+hr {
   background-color: black;
 }
-
-

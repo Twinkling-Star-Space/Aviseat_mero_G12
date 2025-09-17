@@ -6,30 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airplane Seat Reservation</title>
     <link rel="stylesheet" href="Homepage.css">
-   <!--<script src="Homepage.js" defer></script>--> 
-   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>-->
-   <!--<script src="flightdetails.js" defer></script>-->
+    <link rel="stylesheet" href="time_setup.css">
     <script src="showcards.js" defer></script>
-
-
-   <!--<script src="flight03.js" defer></script>-->
-   <!--<script src="cardtoseat.js" defer></script>-->
+    <script src="time_setup.js"></script>
+    <link rel="stylesheet" href="profile.css">
+    <script src="profile.js"></script>
 </head>
 
 <body>
     <header>
         <img class="logo" src="logo.png.png" alt="logo" height="30px" width="40px" />
-        <h1>Aviation Seat Reservation</h1>
+        <h2>Aviation Seat Reservation</h2>
         <div class="header-btns">
             <button class="header-btn" id="help-btn">Help</button>
-            <button class="header-btn" id="signup-btn">Sign Up</button>
+            <a href="signup.html"><button class="header-btn" id="signup-btn">Sign Up</button></a>
             <button class="header-btn" id="login-btn" onclick="location.href='login.html'">Login</button>
-            <div class="profile-btn">
+            <div class="profile-container">
+                <img id="profileImage" src="default-avatar.png" alt="Profile" class="profile-pic" onclick="document.getElementById('fileInput').click();">
+                <input type="file" id="fileInput" accept="image/*">
             </div>
         </div>
-       
     </header>
-
     <main>
         <section class="search">
             <h2>Find Your Flight</h2>
@@ -45,108 +42,125 @@
 
                 <button type="submit" id="search-btn">Search Flights</button>
             </form>
-        </section> 
+        </section>
 
         <section class="flight-preview-sec">
-                    <h2>Flights</h2>
-                    <hr>
-                    <div class="user-cards" data-user-cards-container> </div>
-                    <template data-user-template>
-                        <div class="card"  id="scroll-button">
-                            <div class="flight"  data-target="flight-details" ><img src="image2.png" data-target="flight-details" alt="plane" data-image>
-                            </div>
-                            <div class="header" data-header></div>
-                            <p class="data">Departure:</p><div class="body" data-body></div>
-                            <p class="data">Arrival:</p><div class="part1" data-arrival></div>
-                            <p class="data">Duration:</p><div class="part2" data-duration></div>
-                        </div>
-                    </template>
+            <h2>Flights</h2>
+            <hr>
+            <div class="user-cards" data-user-cards-container> </div>
+            <template data-user-template>
+                <div class="card" id="scroll-button">
+                    <div class="flight" data-target="flight-details">
+                        <img src="image2.png" data-target="flight-details" alt="plane" data-image>
+                    </div>
+                    <div class="header" data-header>Flight 101</div>
+                    <p class="data">Departure:</p>
+                    <div class="body" data-body>NYC</div>
+                    <p class="data">Arrival:</p>
+                    <div class="part1" data-arrival>LAX</div>
+                    <p class="data">Duration:</p>
+                    <div class="part2" data-duration>6h</div>
+                </div>
+            </template>
+
+            <!-- Clone Template -->
+            <div id="card-container"></div>
+
+            <!-- Popup Overlay -->
+            <div class="popup-overlay" id="popupOverlay"></div>
+
+            <!-- Popup Card -->
+            <div class="popup-card" id="popupCard">
+                <h3>Select Date</h3>
+                <input type="date" id="datePicker">
+                <br>
+                <button class="close-btn" id="closePopup">Close</button>
+            </div>
         </section>
 
 
-
         <section class="flight-preview-sec" id="flight-details">
-            <h1 id="airname"><div id="header" data-header>loading.....</div></h1>
             <p>Choose your comfortable seat</p>
             <hr>
             <h2> ECONOMIC CLASS</h2>
             <form action="C:\XAMPP\htdocs\AVISEAT\Aviseat_mero_G12\AVISEAT_PHP\insertdata\inseat.php" method="post">
-            <section id="passenger-details">
-                
-
-                <div class="seat-preview">
-                    <h3 id="side">SIDE A</h3>
-                    <button type="button" id="s1" name="s1" data-seat-number="EA1">1</button>
-                    <button type="button"  id="s1" name="s1"  data-seat-number="EA2">2</button>
-                    <button type="button"  id="s1" name="s1" data-seat-number="EA3">3</button>
-                    <button type="button"  id="s1" name="s1"data-seat-number="EA4">5</button>
-                    <button type="button"  id="s1" name="s1" data-seat-number="EA5">4</button>
-                    <button type="button" id="s1" name="s1" data-seat-number="EB6">6</button>
-                    <button type="button" id="s1" name="s1" data-seat-number="EB7">7</button>
-                    <button type="button" id="s1" name="s1" data-seat-number="EB8">8</button>
-                    <button type="button" id="s1" name="s1" data-seat-number="EB9">9</button>
-                    <button type="button" id="s1" name="s1" data-seat-number="EB10">10</button>
-                </div>
-
-                <div class="seat-preview">
-                    <h3 id="side">SIDE B</h3>
-                    <button type="button" id="s1" name="s1" data-seat-number="BA11">11</button>
-                    <button type="button" id="s1" name="s1" data-seat-number="BA12">12</button>
-                    <button type="button" id="s1" name="s1" data-seat-number="BA13">13</button>
-                    <button type="button" id="s1" name="s1" data-seat-number="BA14">14</button>
-                    <button type="button" id="s1" name="s1" data-seat-number="BA15">15</button>
-                    <button type="button" id="s1" name="s1"data-seat-number="BB16">16</button>
-                    <button type="button" id="s1" name="s1"data-seat-number="BB17">17</button>
-                    <button type="button" id="s1" name="s1" data-seat-number="BB18">18</button>
-                    <button type="button" id="s1" name="s1" data-seat-number="BB19">19</button>
-                    <button type="button" id="s1" name="s1" data-seat-number="BB20">20</button>
+                <section id="passenger-details">
 
 
-                </div>
-            </section>
-            <h2>BUSINESS CLASS</h2>
-            <section>
-                <div class="seat-preview">
-                    <h3 id="side">SIDE A</h3>
-                    <button id="s1" type="button" name="s1">2</button>
-                    <button  id="s1" type="button"  name="s1">1</button>
-                    <button id="s1" type="button" name="s1">3</button>
-                    <button id="s1"type="button"  name="s1">4</button>
-                    <button id="s1"type="button"  name="s1">5</button>
-                    <button id="s1"type="button"  name="s1">6</button>
-                    <button id="s1" type="button" name="s1">7</button>
-                    <button id="s1" type="button" name="s1">8</button>
-                    <button id="s1" type="button" name="s1">9</button>
-                    <button id="s1" type="button" name="s1">10</button>
-                </div>
+                    <div class="seat-preview">
+                        <h3 id="side">SIDE A</h3>
+                        <button type="button" id="s1" name="s1" data-seat-number="EA1">1</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="EA2">2</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="EA3">3</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="EA4">5</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="EA5">4</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="EB6">6</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="EB7">7</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="EB8">8</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="EB9">9</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="EB10">10</button>
+                    </div>
 
-                <div class="seat-preview">
-                    <h3 id="side">SIDE B</h3>
-                    <button id="s1"type= "button"  name="s1">11</button>
-                    <button id="s1" type= "button" name="s1">12</button>
-                    <button id="s1" type= "button" name="s1">13</button>
-                    <button id="s1" type= "button" name="s1">14</button>
-                    <button id="s1" type= "button" name="s1">15</button>
-                    <button id="s1" type= "button" name="s1">16</button>
-                    <button id="s1"type= "button"  name="s1">17</button>
-                    <button id="s1" type= "button" name="s1">18</button>
-                    <button id="s1"type= "button"  name="s1">19</button>
-                    <button id="s1" type= "button" name="s1">20</button>
-                </div>
-                <button id="open-form" type="button" onclick="location.href='form.html'">Submit and open form</button>
-         
-            </section>
-        </form>
-    <hr>
-</section>
-    <footer class="footer">
-        <h1 id="clg">ST. XAVIER'S COLLEGE</h1>
-        <h2> Maitighar, Kathmandu</h2>
-        <h2>@Copyright</h2>
-        <p>023NEB750@sxc.edu.np</p>
-    </footer>
+                    <div class="seat-preview">
+                        <h3 id="side">SIDE B</h3>
+                        <button type="button" id="s1" name="s1" data-seat-number="BA11">11</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="BA12">12</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="BA13">13</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="BA14">14</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="BA15">15</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="BB16">16</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="BB17">17</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="BB18">18</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="BB19">19</button>
+                        <button type="button" id="s1" name="s1" data-seat-number="BB20">20</button>
 
-</main>
+
+                    </div>
+                </section>
+                <h2>BUSINESS CLASS</h2>
+                <section>
+                    <div class="seat-preview">
+                        <h3 id="side">SIDE A</h3>
+                        <button id="s1" type="button" name="s1">2</button>
+                        <button id="s1" type="button" name="s1">1</button>
+                        <button id="s1" type="button" name="s1">3</button>
+                        <button id="s1" type="button" name="s1">4</button>
+                        <button id="s1" type="button" name="s1">5</button>
+                        <button id="s1" type="button" name="s1">6</button>
+                        <button id="s1" type="button" name="s1">7</button>
+                        <button id="s1" type="button" name="s1">8</button>
+                        <button id="s1" type="button" name="s1">9</button>
+                        <button id="s1" type="button" name="s1">10</button>
+                    </div>
+
+                    <div class="seat-preview">
+                        <h3 id="side">SIDE B</h3>
+                        <button id="s1" type="button" name="s1">11</button>
+                        <button id="s1" type="button" name="s1">12</button>
+                        <button id="s1" type="button" name="s1">13</button>
+                        <button id="s1" type="button" name="s1">14</button>
+                        <button id="s1" type="button" name="s1">15</button>
+                        <button id="s1" type="button" name="s1">16</button>
+                        <button id="s1" type="button" name="s1">17</button>
+                        <button id="s1" type="button" name="s1">18</button>
+                        <button id="s1" type="button" name="s1">19</button>
+                        <button id="s1" type="button" name="s1">20</button>
+                    </div>
+                    <button id="open-form" type="button" onclick="location.href='form.html'">Submit and open
+                        form</button>
+
+                </section>
+            </form>
+            <hr>
+        </section>
+        <footer class="footer">
+            <h1 id="clg">ST. XAVIER'S COLLEGE</h1>
+            <h2> Maitighar, Kathmandu</h2>
+            <h2>@Copyright</h2>
+            <p>023NEB750@sxc.edu.np</p>
+        </footer>
+
+    </main>
 </body>
 
 </html>

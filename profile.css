@@ -1,0 +1,31 @@
+
+.upload-btn {
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.profile-pic{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  object-fit: cover;
+  background: #3b94cb;
+}
+
+
+#fileInput{
+  display: none;
+  /* hide actual input */
+}
+
+.profile-container{
+  margin-left: 0.5pc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

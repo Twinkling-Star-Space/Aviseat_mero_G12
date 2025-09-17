@@ -99,6 +99,36 @@
         "arrival_time": "3:30 PM",
         "duration": "2 hours 30 minutes",
         "aircraft": "Boeing 767"
+      },
+      {
+        "flight_number": "Jk-581",
+        "airline": "Nepal Airlines",
+        "departure": "Kathmandu(KTM)",
+        "arrival": "Seoul Incheon (ICN)",
+        "departure_time": "5:00 PM",
+        "arrival_time": "8:30 PM",
+        "duration": "3 hours 30 minutes",
+        "aircraft": "Boeing 767"
+      },
+      {
+        "flight_number": "PL-511",
+        "airline": "Indian Airlines",
+        "departure": "Magic Haneda (HND)",
+        "arrival": "Soru Incheon (ICN)",
+        "departure_time": "1:00 PM",
+        "arrival_time": "3:30 PM",
+        "duration": "2 hours 30 minutes",
+        "aircraft": "Boeing 567"
+      },
+      {
+        "flight_number": "JLD-519",
+        "airline": "Japan Airlines",
+        "departure": "Rokyo Haneda (HND)",
+        "arrival": "Meoul Incheon (ICN)",
+        "departure_time": "1:00 PM",
+        "arrival_time": "3:30 PM",
+        "duration": "2 hours 30 minutes",
+        "aircraft": "Boeing 767"
       }
     ]
   }

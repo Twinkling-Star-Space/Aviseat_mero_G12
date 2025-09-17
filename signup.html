@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flight App - Sign Up</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body {
+      background: url('signup1.png') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      height: 100vh;
+      margin: 0;
+    }
+
+
+    .signup-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      width: 450px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      opacity: 0.8;
+    }
+
+    .signup-container h2 {
+      margin-bottom: 20px;
+      color: #0072ff;
+    }
+
+    .signup-container p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #444;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .input-group input:focus {
+      border-color: #0072ff;
+      box-shadow: 0 0 5px rgba(0, 114, 255, 0.3);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #0655a3;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0056cc;
+    }
+
+    .login-link {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .login-link a {
+      color: #0072ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+
+    /* Small animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="signup-container">
+    <h2>Sign Up ✈️</h2>
+    <p>Create your account to book and manage flights</p>
+
+    <form>
+      <div class="input-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="John Doe" required>
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="example@email.com" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••" required>
+      </div>
+
+      <div class="input-group">
+        <label for="confirm">Confirm Password</label>
+        <input type="password" id="confirm" placeholder="••••••••" required>
+      </div>
+
+      <button type="submit" class="btn">Create Account</button>
+    </form>
+
+    <div class="login-link">
+      Already have an account? <a href="#">Log In</a>
+    </div>
+  </div>
+</body>
+
+</html>

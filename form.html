@@ -2,83 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticket Form</title>
-    <link rel="stylesheet" href="form.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Ticket Form</title>
+  <link rel="stylesheet" href="form.css">
 </head>
 
 <body>
-    <form action="C:\XAMPP\htdocs\AVISEAT\Aviseat_mero_G12\AVISEAT_PHP\insertdata\inticket.php" method="post">
-        <div class="header">
-            <img id="logo" src="logo.png.png" alt="logo">
-            <header>Ticketing Form</header>
-            
-        </div>
-        <div class="body">
-            <label for="name" id="nametitle">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            <label id="add">Add Passenger's name</label>
+  <form action="AVISEAT_PHP/insertdata/inticket.php" method="post" class="ticket-form">
+    <div class="form-header">
+      <img id="logo" src="logo.png.png" alt="AVISEAT Logo">
+      <h2>Flight Ticketing Form</h2>
+    </div>
+    <h4>Your safe journey is our priority. Please bring this ticket on the day of flight.</h4>
+    <div>---------------------------------------------------------------------------------------------</div>
+    <div class="form-body">
 
-            <label for="age" id="agetitle">Age:</label>
-            <input type="number" id="age" name="age" min="18" placeholder="Enter your Age" required>
-            <label id="add">Add passenger's age</label>
+      <div class="input-group">
+        <label for="name">Passenger Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
 
-            <label for="citizen" id="citizen" name="citizen" required>Citizenship</label>
-            <select name="citizen" id="citizen">
-                <option value="Nepali">Nepali</option>
-                <option value="Indian">Indian</option>
-                <option value="Other">Other</option>
-            </select>
+      <div class="input-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" placeholder="Enter your age" required>
+      </div>
 
-            <label for="email" id="emailtitle">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+      <div class="input-group">
+        <label for="citizen">Citizenship:</label>
+        <select name="citizen" id="citizen" required>
+          <option value="" disabled selected>-- Select --</option>
+          <option value="Nepali">Nepali</option>
+          <option value="Indian">Indian</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
 
-            <label for="phone" id="phonetitle">Phone:</label>
-            <input type="number" id="phone" name="phone" placeholder="Enter your Phone number" required>
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+      </div>
 
-            <div id="journey">
-            <label for="departure" id="departuret">Departure:</label>
-            <select name="departure" id="departure">
-                <option value="Janakpur">Janakpur</option>
-                <option value="Kathmandu">Kathmandu</option>
-                <option value="Biratnagar">Biratnagar</option>
-                <option value="Pokhara">Pokhara</option>
-            </select>
-            
-            <label for="arrival" id="arrivalt">Arrival:</label>
-            <select name="arrival" id="arrival">
-                <option value="Janakpur">Janakpur</option>
-                <option value="Kathmandu">Kathmandu</option>
-                <option value="Biratnagar">Biratnagar</option>
-                <option value="Pokhara">Pokhara</option>
-            </select>
-        </div>
-            <label for="seats" id="seatstitle">Number of Seats:</label>
-            <input type="number" id="seats" min="1" placeholder="Enter how many seats do you want" required>
-           
-            <div class="classk">
-            <label for="class" id="classtitle">Class:</label>
-            <select name="class" id="class">
-                <option value="Economy">Economy</option>
-                <option value="Business">Business</option>
-                <option value="First Class">First Class</option>
-            </select>
+      <div class="input-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+977-98XXXXXXXX" pattern="[0-9+ -]{7,15}" required>
+      </div>
 
-
-            <label for="card" id="cardtitle">Payment Method:</label>
-            <input type="radio" id="card" name="card" value="Card">
-            <label for="card">Credit/Debit Card</label>
-            <input type="radio" id="cash" name="card" value="Cash">
-            <label for="cash">Cash</label>
+      <div class="journey">
+        <div class="input-group">
+          <label for="departure">Departure:</label>
+          <select name="departure" id="departure" required>
+            <option value="" disabled selected>-- Select --</option>
+            <option value="Janakpur">Janakpur</option>
+            <option value="Kathmandu">Kathmandu</option>
+            <option value="Biratnagar">Biratnagar</option>
+            <option value="Pokhara">Pokhara</option>
+          </select>
         </div>
 
-        <button class="book" type="button" onclick="location.href='paymentform.html'"> Add to Credit/Debit Card</button>
-        <button type="submit"> Submit </button>
-
-
+        <div class="input-group">
+          <label for="arrival">Arrival:</label>
+          <select name="arrival" id="arrival" required>
+            <option value="" disabled selected>-- Select --</option>
+            <option value="Janakpur">Janakpur</option>
+            <option value="Kathmandu">Kathmandu</option>
+            <option value="Biratnagar">Biratnagar</option>
+            <option value="Pokhara">Pokhara</option>
+          </select>
         </div>
-    </form>
+      </div>
+
+      <div class="input-group">
+        <label for="seats">Number of Seats:</label>
+        <input type="number" id="seats" name="seats" min="1" placeholder="Enter number of seats" required>
+      </div>
+
+      <div class="input-group">
+        <label for="class">Travel Class:</label>
+        <select name="class" id="class" required>
+          <option value="" disabled selected>-- Select Class --</option>
+          <option value="Economy">Economy</option>
+          <option value="Business">Business</option>
+          <option value="First Class">First Class</option>
+        </select>
+      </div>
+
+      <div class="input-group payment">
+        <label>Payment Method:</label>
+        <div class="payment-method">
+            <label><input type="radio" name="payment" value="Card" required> Credit/Debit Card</label>
+        <label><input type="radio" name="payment" value="Cash" required> Cash</label>
+        </div>
+        
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn submit">Submit</button>
+        <button type="button" class="btn secondary" onclick="location.href='paymentform.html'">Add Card Details</button>
+      </div>
+
+    </div>
+  </form>
 </body>
 
 </html>

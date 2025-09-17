@@ -1,160 +1,141 @@
-.header{
-    width: 40%;
-    padding: 2%;
-    margin: auto;
-    text-align: center;
-    background-color: #f8f9fa;
-    box-shadow: 0 0 5px rgba(47, 44, 44, 0.1);
-    color:white;
-    background-color:rgb(17, 17, 232);
-    height:4pc;
-    font-family: 'Poppins', sans-serif;
-    border-radius:9px 9px 0 0;
-    font-size:30px;
-    margin-top:1pc;
-    display: flex;
-    top:0px;
-    box-shadow:  0 0 black;
-    padding-top:4pc;
-    font-size:40px;
-}
-#logo{
-    width:8pc;
-    height:8pc;
-    border-radius:5pc;
-    position: relatve;
-    margin-right:6pc;
+/* General Styles */
+body {
+  margin: 0;
+  padding: 5pc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-
-.body{
-    width: 40%;
-    padding: 2%;
-    margin: auto;
-    background-color: #e1e5e9;
-    height:150%;
-    font-family: 'Poppins', sans-serif;
-    font-size:15px;
-    display:block; 
-    margin-bottom:2pc; 
+.ticket-form {
+  background:white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
 }
 
-#add{
-   color:green;
-   margin-left:40%;
-   font-size:14;
-   font-weight:bold;
+.form-header {
+  display:flex;
+  text-align: center;
+  align-items:center;
+  
+}
+.form-header{
+  height:8pc;
+}
+.form-header img {
+  height: 10pc;
 }
 
-#nametitle,#agetitle,#emailtitle,#phonetitle,#seatstitle{
-display:flex;
-align-items:center;
-    justify-content:center;
-    font-weight:bold;
-    font-size:14px;
-    color:black;
-    margin-top:1pc;
-
-}
-#departuret{
-  margin-right:2px;
-  margin-left:3.7pc;
-  margin-top:0.5pc;
+.form-header h2 {
+  color: #0072ff;
+  margin: 0;
 }
 
-#arrivalt{
-    margin-right:2px;
-    margin-top:0.5pc;
+.form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-#citizen{
-    display:block;
-    margin-top:1pc;
-    margin-bottom:1pc;
-    font-size:14px;
-    color:black;
-    margin-left:3.7pc;
-    margin-right:10px;
-    display:block;
-    width:30%;
+.input-group {
+  display: flex;
+  flex-direction: column;
 }
 
-#journey{
- display:flex;
- margin-right:2pc;
- margin-bottom:1pc;
- font-size:14px;
- color:black;
-
-}
-#departure{
-    margin-right:5pc;
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
 }
 
-#departure, #arrival{
-    width:20%;
-    height:2pc;
-    margin-bottom:1pc;
-    display:flex;
-    font-size:14px;
-
-}
-#name,#age,#email,#phone,#seats{
-    width:30pc;
-    height:2pc;
-    margin-bottom:1pc;
-    display:flex;
-    padding-left:5px;
-    align-items:center;
-    margin:auto;
-    padding-left:10px;
-
+.input-group input,
+.input-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 14px;
 }
 
-#phone{
-    margin-bottom:1pc;
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #0072ff;
+  box-shadow: 0 0 5px rgba(0, 114, 255, 0.3);
+  outline: none;
 }
 
-*{
-    margin:0px;
-    padding:0px;
+.journey {
+  display: flex;
+  gap: 15px;
 }
 
-.classk{
-    display:block;
-    padding-top:1pc;
-    padding-bottom:1pc;
-    padding-left:3.5pc;
-
+.payment label {
+  font-weight: normal;
 }
 
-#class{
-    width:50%;
-    height:2pc;
-    margin-bottom:1pc;
-    display:flex;
-    font-size:14px;
-    color:black;
-
-}
-#classtitle{
-    display:flex;
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
 }
 
-#seats{
-    margin-bottom:1pc;
+.btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.book{
-    background-color: blue;
-    color:white;
-    padding:5px;
-    border-radius:5px;
-    margin-top:1pc;
-    cursor:pointer;
-    margin-left:65%;
-    margin-right:1pc;
-    margin-bottom:4pc;
-    width:10pc;
-    border:none;
+.btn.submit {
+  background: #0072ff;
+  color: white;
+}
+
+.btn.submit:hover {
+  background: #0056cc;
+}
+
+.btn.secondary {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.btn.secondary:hover {
+  background: #ddd;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .journey {
+    flex-direction: column;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.payment-method{
+  display:flex;
+  gap:25px;
 }

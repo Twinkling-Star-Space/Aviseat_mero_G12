@@ -1,8 +1,11 @@
 
-*{
-    margin:0px;
-    
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
 
 img{
     width: 100%;
@@ -26,7 +29,7 @@ img{
     border-radius: 5px;
     opacity:0.8;
     margin-left:0px;
-    height:48.5pc;
+    height:100vh;
 }
 
 .header{
@@ -88,7 +91,7 @@ h1
     margin: auto;
     padding: 1%;
     background-color: rgb(10, 78, 78);
-    height: 29pc;
+    height: 33pc;
     border-radius: 0 0 5px 5px;
     opacity:0.6;
     
@@ -148,4 +151,16 @@ h2{
   align-items:right;
   margin-left:85%;
   margin-top:1pc;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
