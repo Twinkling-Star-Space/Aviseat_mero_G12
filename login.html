@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment slip</title>
-    <link rel="stylesheet" href="login.css">
-</head>
-<body>
-    <div class="container">
-        <img src="image copy 2.png" alt="airplane" >
-    <header class="header">
-        <h1>Log in</h1>
-    </header>
-    <main>
-        <section class="body">
-            <h2>Personal Details</h2>
-            <label for="password" id="ustitle">Username</label>
-            <input type="text" id="username" placeholder="Enter your Username/email" required>
 
-            <label for="Password" id="pwtitle">Password</label>
-            <input type="password" id="password" placeholder="Enter your password" required>
-            
-            <button type="submit" id="submit">login</button>
-        </section>
-    </main>
-</div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+    <form id="loginForm" method="post" action="AVISEAT_PHP/insertdata/inlogin.php" novalidate>
+
+        <h1 style="text-align:center; color:#fff; margin-bottom: 1rem;">Login</h1>
+
+        <label for="username">Username or Email:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Login</button>
+
+        <div id="message" class="error"></div>
+    </form>
+
+    <script>
+        // Show success message if redirected after registration
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('registered')) {
+            const message = document.getElementById('message');
+            message.textContent = "Registration successful! Please login.";
+            message.className = "success";
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value;
+            const message = document.getElementById('message');
+
+            message.textContent = '';
+            message.className = 'error';
+
+            if (!username) {
+                e.preventDefault();
+                message.textContent = 'Username/email is required.';
+                return;
+            }
+            if (!password) {
+                e.preventDefault();
+                message.textContent = 'Password is required.';
+                return;
+            }
+        });
+    </script>
+
 </body>
+
 </html>

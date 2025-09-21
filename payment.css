@@ -1,0 +1,157 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.container1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container2 {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(10, 78, 78, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logodiv {
+  flex: 0 0 auto;
+}
+
+#logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  flex-grow: 1;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.amountbooked {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.rupee {
+  background-color: #717777;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 1rem;
+  text-align: right;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* Body/Form */
+.body {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(10, 78, 78, 0.9);
+  padding: 30px 20px;
+  border-radius: 0 0 12px 12px;
+  color: white;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  margin-top: 14px;
+  color: #ffffff;
+}
+
+select,
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+#submit {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #189473;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #127d60;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header,
+  .body {
+    max-width: 90%;
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
