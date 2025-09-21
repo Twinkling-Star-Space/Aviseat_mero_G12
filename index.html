@@ -22,7 +22,8 @@
             <a href="signup.html"><button class="header-btn" id="signup-btn">Sign Up</button></a>
             <button class="header-btn" id="login-btn" onclick="location.href='login.html'">Login</button>
             <div class="profile-container">
-                <img id="profileImage" src="default-avatar.png" alt="Profile" class="profile-pic" onclick="document.getElementById('fileInput').click();">
+                <img id="profileImage" src="default-avatar.png" alt="Profile" class="profile-pic"
+                    onclick="document.getElementById('fileInput').click();">
                 <input type="file" id="fileInput" accept="image/*">
             </div>
         </div>
@@ -32,7 +33,7 @@
             <h2>Find Your Flight</h2>
             <form>
                 <label for="from">From:</label>
-               <input type="search" id="from" name="from" placeholder="Enter departure City" data-search>
+                <input type="search" id="from" name="from" placeholder="Enter departure City" data-search>
 
                 <label for="to">To:</label>
                 <input type="search" id="to" name="to" placeholder="Enter destination City" data-search>
@@ -52,14 +53,34 @@
                 <div class="card" id="scroll-button">
                     <div class="flight" data-target="flight-details">
                         <img src="image2.png" data-target="flight-details" alt="plane" data-image>
+                    
+                    <div class="flight_details">
+                        <div class="header" data-header>Flight 101</div>
+
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <p class="data">Departure:</p>
+                                <div class="body" data-body>NYC</div>
+                            </div>
+
+                            <div class="grid-item">
+                                <p class="data">Arrival:</p>
+                                <div class="part1" data-arrival>LAX</div>
+                            </div>
+
+                            <div class="grid-item">
+                                <p class="data">Duration:</p>
+                                <div class="part2" data-duration>6h</div>
+                            </div>
+
+                            <div class="grid-item">
+                                <p class="price">Price:</p>
+                                <div class="data" data-price>$350</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="header" data-header>Flight 101</div>
-                    <p class="data">Departure:</p>
-                    <div class="body" data-body>NYC</div>
-                    <p class="data">Arrival:</p>
-                    <div class="part1" data-arrival>LAX</div>
-                    <p class="data">Duration:</p>
-                    <div class="part2" data-duration>6h</div>
+                    </div>
+
                 </div>
             </template>
 
@@ -161,6 +182,38 @@
         </footer>
 
     </main>
+
+    <div id="cookie-consent"
+        style="display:none; position: fixed; bottom: 0; left: 0; right: 0; background: #222; color: #fff; padding: 15px; text-align: center; z-index: 9999;">
+        This website uses cookies to ensure you get the best experience.
+        <button id="accept-cookies" style="margin-left: 10px; padding: 5px 10px; cursor: pointer;">Accept</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const consentPopup = document.getElementById('cookie-consent');
+            const acceptBtn = document.getElementById('accept-cookies');
+
+            function getCookie(name) {
+                const value = `; ${document.cookie}`;
+                const parts = value.split(`; ${name}=`);
+                if (parts.length === 2) return parts.pop().split(';').shift();
+            }
+
+            // Show popup only if cookie is NOT set
+            if (!getCookie('cookie_consent')) {
+                consentPopup.style.display = 'block';
+            }
+
+            acceptBtn.addEventListener('click', () => {
+                // Set cookie valid for 5 minutes (300 seconds)
+                document.cookie = "cookie_consent=accepted; max-age=300; path=/";
+                consentPopup.style.display = 'none';
+            });
+        });
+
+    </script>
+
 </body>
 
 </html>

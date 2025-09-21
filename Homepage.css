@@ -60,20 +60,15 @@ input{
 }
 
 .card{
-  background-color: rgba(206, 202, 206, 0.284);
   margin-right: 2pc;
   margin-bottom: 2pc;
-  height: 20pc;
+  height: 23.5pc;
   border-radius: 9px;
   box-shadow: 0 0 10px grey;
   cursor: pointer;
 
 }
 
-.card:hover {
-  background-color: aquamarine; /* enlarge 5% on hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* make shadow deeper */
-}
 
 
 .body,
@@ -97,6 +92,8 @@ input{
 
 }
 
+
+
 .hide {
   display: none;
 }
@@ -107,8 +104,7 @@ input{
   margin-bottom: 1pc;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  background-color: rgb(43, 41, 41);
-  border-radius: 7px;
+  border-radius: 12px 12px 0 0;
 }
 
 #airname {
@@ -130,10 +126,58 @@ img {
 }
 
 .data {
-  display: inline-block;
+  display: block;
   font-size: 0.8rem;
   font-weight: bold;
 }
+
+
+
+
+
+
+
+.flight_details {
+    border: 1px solid #ccc;
+    padding: 8px;
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius:0 0 12px 12px ;
+}
+
+.flight_details:hover {
+  background-color: aquamarine; /* enlarge 5% on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* make shadow deeper */
+}
+
+
+.header {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+}
+
+.grid-item {
+    background: #fff;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.grid-item p {
+    margin: 0;
+    font-weight: bold;
+}
+
+
 
 
 

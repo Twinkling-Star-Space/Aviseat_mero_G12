@@ -8,7 +8,8 @@
         "departure_time": "8:15 AM",
         "arrival_time": "11:45 AM",
         "duration": "6 hours 30 minutes",
-        "aircraft": "Boeing 737-800"
+        "aircraft": "Boeing 737-800",
+        "price" : "1000"
       },
       {
         "flight_number": "EK-409",
@@ -18,7 +19,8 @@
         "departure_time": "2:00 PM",
         "arrival_time": "6:30 PM",
         "duration": "7 hours 30 minutes",
-        "aircraft": "Airbus A380"
+        "aircraft": "Airbus A380",
+        "price" : "1000"
       },
       {
         "flight_number": "SQ-321",
@@ -28,7 +30,8 @@
         "departure_time": "10:30 PM",
         "arrival_time": "7:00 AM (next day)",
         "duration": "8 hours 30 minutes",
-        "aircraft": "Airbus A350"
+        "aircraft": "Airbus A350",
+        "price" : "1000"
       },
       {
         "flight_number": "BA-178",
@@ -38,7 +41,8 @@
         "departure_time": "9:45 AM",
         "arrival_time": "11:15 AM",
         "duration": "1 hour 30 minutes",
-        "aircraft": "Airbus A320"
+        "aircraft": "Airbus A320",
+        "price" : "1000"
       },
       {
         "flight_number": "DL-982",
@@ -48,7 +52,8 @@
         "departure_time": "12:00 PM",
         "arrival_time": "3:30 PM",
         "duration": "14 hours 30 minutes",
-        "aircraft": "Boeing 777-200LR"
+        "aircraft": "Boeing 777-200LR",
+        "price" : "1000"
       },
       {
         "flight_number": "QF-12",
@@ -58,7 +63,8 @@
         "departure_time": "11:00 AM",
         "arrival_time": "6:30 AM",
         "duration": "15 hours 30 minutes",
-        "aircraft": "Boeing 787-9"
+        "aircraft": "Boeing 787-9",
+        "price" : "1000"
       },
       {
         "flight_number": "LH-117",
@@ -68,7 +74,8 @@
         "departure_time": "10:00 PM",
         "arrival_time": "10:00 AM",
         "duration": "8 hours",
-        "aircraft": "Airbus A330"
+        "aircraft": "Airbus A330",
+        "price" : "1000"
       },
       {
         "flight_number": "AC-845",
@@ -78,7 +85,8 @@
         "departure_time": "7:00 AM",
         "arrival_time": "9:30 AM",
         "duration": "4 hours 30 minutes",
-        "aircraft": "Boeing 737 MAX 8"
+        "aircraft": "Boeing 737 MAX 8",
+        "price" : "1000"
       },
       {
         "flight_number": "TK-72",
@@ -88,7 +96,8 @@
         "departure_time": "3:00 PM",
         "arrival_time": "7:00 PM",
         "duration": "11 hours",
-        "aircraft": "Boeing 777-300ER"
+        "aircraft": "Boeing 777-300ER",
+        "price" : "1000"
       },
       {
         "flight_number": "JL-511",
@@ -98,7 +107,8 @@
         "departure_time": "1:00 PM",
         "arrival_time": "3:30 PM",
         "duration": "2 hours 30 minutes",
-        "aircraft": "Boeing 767"
+        "aircraft": "Boeing 767",
+        "price" : "1000"
       },
       {
         "flight_number": "Jk-581",
@@ -108,7 +118,8 @@
         "departure_time": "5:00 PM",
         "arrival_time": "8:30 PM",
         "duration": "3 hours 30 minutes",
-        "aircraft": "Boeing 767"
+        "aircraft": "Boeing 767",
+        "price" : "1000"
       },
       {
         "flight_number": "PL-511",
@@ -118,7 +129,8 @@
         "departure_time": "1:00 PM",
         "arrival_time": "3:30 PM",
         "duration": "2 hours 30 minutes",
-        "aircraft": "Boeing 567"
+        "aircraft": "Boeing 567",
+        "price" : "1000"
       },
       {
         "flight_number": "JLD-519",
@@ -128,7 +140,8 @@
         "departure_time": "1:00 PM",
         "arrival_time": "3:30 PM",
         "duration": "2 hours 30 minutes",
-        "aircraft": "Boeing 767"
+        "aircraft": "Boeing 767",
+        "price" : "1000"
       }
     ]
   }

@@ -22,11 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const body = card.querySelector("[data-body]");
         const arrival = card.querySelector("[data-arrival]");
         const duration = card.querySelector("[data-duration]");
+        const price = card.querySelector("[data-price]");
 
         header.textContent = `${flight.flight_number}`;
         body.textContent = `${flight.departure}`;
         arrival.textContent = `${flight.arrival}`;
         duration.textContent = flight.duration;
+        price.textContent = flight.price;
 
         // Append card to container
         userCardContainer.append(card);

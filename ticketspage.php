@@ -111,28 +111,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         font-size: 14px;
                         color: #888;
                     }
-
-                    .pay-btn {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.btn {
-  padding: 12px 24px;
-  background: #28a745;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-  margin-top:26pc;
-  margin-left:26pc;
-}
-
-.btn:hover {
-  background: #218838;
-}
-
                 </style>
             </head>
             <body>
@@ -155,10 +133,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         Thank you for booking with us!
                     </div>
                 </div>
-                <div class="pay-btn">
-                    <a href="../payment.html?id=<?= $row['id'] ?>" class="btn">💳 Proceed to Payment</a>
-                </div>
-
             </body>
             </html>
             <?php
