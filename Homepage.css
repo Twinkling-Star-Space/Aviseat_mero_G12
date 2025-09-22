@@ -62,9 +62,8 @@ input{
 .card{
   margin-right: 2pc;
   margin-bottom: 2pc;
-  height: 23.5pc;
+  height: 30pc;
   border-radius: 9px;
-  box-shadow: 0 0 10px grey;
   cursor: pointer;
 
 }
@@ -83,12 +82,15 @@ input{
   font-weight: bold;
 }
 
-.card>.body,
+.card>
+.body,
 .part1,
-.part2 {
-  font-size: .7rem;
+.part2,
+.price {
+  font-size: .5rem;
   margin-right: 8px;
   margin-bottom: 1px;
+
 
 }
 
@@ -130,10 +132,6 @@ img {
   font-size: 0.8rem;
   font-weight: bold;
 }
-
-
-
-
 
 
 

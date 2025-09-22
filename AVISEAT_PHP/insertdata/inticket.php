@@ -118,26 +118,96 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 .btn {
-  padding: 12px 24px;
-  background: #28a745;
+  padding: 2px 2px;
+  background: #287ba7ff;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
   transition: background 0.3s ease;
-  margin-top:26pc;
-  margin-left:26pc;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
 }
 
-.btn:hover {
-  background: #218838;
+.btn2 {
+  padding: 4px 4px;
+  background: #287ba7ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin: 10px;
+   display:flex;
+  justify-content:center;
+  align-items:center;
+  border:none;
 }
 
-                </style>
+.btns{
+    display:flex;
+    flex-direction:horizontal;
+  justify-content:center;
+    gap:1pc;
+    margin-top:1pc;
+
+}
+
+.company_details {
+    text-align: center;
+    padding: 10px 5px;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    border-bottom: 2px solid #0077b6;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.company_name {
+    font-size: 36px;
+    color: #0077b6;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ticket_title {
+    font-size: 28px;
+    color: #023e8a;
+    margin-bottom: 10px;
+}
+
+.note {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.wish {
+    font-size: 15px;
+    color: #555;
+}
+
+
+
+
+
+
+</style>
             </head>
             <body>
                 <div class="ticket">
-                    <h2>🎟️ Travel Ticket</h2>
+                   <div class="company_details">
+    <h1 class="company_name">AVISEAT</h1>
+    <h2 class="ticket_title">🎟️ Travel Ticket</h2>
+    <p class="note">Please bring this ticket on your day of flight.</p>
+    <p class="wish">Have a safe and joyous journey!</p>
+</div>
+
                     <div class="ticket-info">
                         <div><span class="label">Passenger:</span> <?= htmlspecialchars($row['PassengerName']) ?></div>
                         <div><span class="label">Age:</span> <?= htmlspecialchars($row['Age']) ?></div>
@@ -154,10 +224,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="footer">
                         Thank you for booking with us!
                     </div>
+                    <div class="btns">
+                    <a href="../../payment.html?id=<?= $row['id'] ?>" class="btn">💳 Proceed to Payment</a>
+             
+                     <button class="btn2" onclick="printTicket()">🖨️ Print Ticket</button>
+                    <button class="btn2" onclick="downloadPDF()">⬇️ Download Ticket</button>
                 </div>
-                <div class="pay-btn">
-                    <a href="../payment.html?id=<?= $row['id'] ?>" class="btn">💳 Proceed to Payment</a>
                 </div>
+                
+
+                    <!-- Include jsPDF via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script>
+    // Print the ticket
+    function printTicket() {
+        const printContents = document.querySelector('.ticket').outerHTML;
+        const originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+        location.reload(); // Reload page to restore content
+    }
+
+    // Download ticket as PDF
+    async function downloadPDF() {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+
+        const ticket = document.querySelector('.ticket');
+
+        // Use html2canvas to render the ticket to an image, then add to PDF
+        await html2canvas(ticket).then((canvas) => {
+            const imgData = canvas.toDataURL('image/png');
+            const imgProps = doc.getImageProperties(imgData);
+            const pdfWidth = doc.internal.pageSize.getWidth();
+            const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+
+            doc.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+            doc.save("travel_ticket.pdf");
+        });
+    }
+</script>
+
+<!-- Add html2canvas library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
             </body>
             </html>
