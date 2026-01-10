@@ -1,17 +1,77 @@
 # Aviseat_mero_G12
-Grade 12 Final Project
-THIS IS MY GRADE 12 RESULTANT PROJECT. THIS PROJECTS AIMS TO LEVERAGE THE PASSENGER( AVISEAT).
 
-Here is the way you can operate this sytem of flight search engin
-1. open this repositories inside the folder of htdocs of xampp.
-2. open it into your vs code.
-3. then open xampp
-4. after doing so, return to vs code and enter into index.html and run it online server
-5. now it turn to run json server inside the commonand prompt terminal use the following: i. code flights.json  ii. json-server --watch flights.json
-6. finally, you will see the update into the website.
+### Grade 12 Final Project – Flight Booking System
 
-What can you do with this search engine?
-#first search your flight
-#book your flight
-#store your data into local database called xampp
-#you can follow CRUD operation in the project.
+## ✈️ Project Overview
+
+**Aviseat_mero_G12** is my **Grade 12 final project**, developed as a **flight booking and search system**.
+The main aim of this project is to **assist passengers (Aviseat)** by providing a simple and functional flight search engine where users can search and book flights.
+
+This project demonstrates my understanding of **frontend, backend basics, data handling, and CRUD operations**.
+
+---
+
+## 🎯 Project Objectives
+
+* Build a functional flight search engine
+* Allow users to search and book flights
+* Store user and booking data locally
+* Practice full project development for academic purposes
+
+---
+
+## 🛠️ Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+* JSON Server
+* XAMPP (Local Database)
+
+---
+
+## 🚀 How to Run the Project
+
+Follow these steps to operate the flight booking system:
+
+1. Clone or download this repository
+2. Place the project folder inside the **`htdocs`** directory of **XAMPP**
+3. Open the project folder in **VS Code**
+4. Start **Apache** from the XAMPP control panel
+5. Open `index.html` and run it using **Live Server**
+6. Open **Command Prompt / Terminal** and run the JSON server:
+
+   * `code flights.json`
+   * `json-server --watch flights.json`
+7. Refresh the website to see live updates
+
+---
+
+## 🔍 Features of the Flight Search Engine
+
+* Search available flights
+* Book flights
+* Store user and booking data in a local database (XAMPP)
+* Perform **CRUD operations**:
+
+  * Create
+  * Read
+  * Update
+  * Delete
+
+---
+
+## 📌 Project Status
+
+✅ **Completed (Academic Project)**
+Further improvements and features may be added in the future.
+
+---
+
+## ⚠️ Note
+
+This project is developed **for educational purposes** as part of my Grade 12 final assessment.
+
+---
+
+⭐ Thank you for checking out my project!
